@@ -1,0 +1,512 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2e9db;
+}
+
+/* Fondo compartido entre header y sección principal */
+.fondo-header {
+  background-image: url('imagenes/Fondo/ChatGPT\ Image\ 14\ abr\ 2025\,\ 08_17_34\ p.m..png');
+  background-size: cover;
+  background-position: center 0%;
+  background-size: 100%;  /* Menor porcentaje = más alejada */
+  min-height: 600px;
+}
+
+/* Header */
+header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(0,0,0,0.4);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  color: #25D366;
+}
+.boton-whatsapp-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  gap: 8px;
+  height: 10px; /* misma altura que los otros */
+  margin-left: 5px;
+  position: relative;
+  top: 0; /* alineación vertical */
+}
+
+.boton-whatsapp-menu:hover {
+  background-color: white;
+  color: #25D366;
+}
+
+.icono-whatsapp {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1); /* hace blanco el ícono */
+}
+.boton-whatsapp-menu:hover .icono-whatsapp {
+  filter: none;
+}
+/* Sección principal */
+.seccion-principal {
+  color: white;
+  padding: 80px 40px 60px;
+  text-align: center;
+}
+/* motor de reserva */
+/* === Fuente general === */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === CONTENEDOR GENERAL === */
+.buscador-principal {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+/* === FORMULARIO === */
+#form-busqueda {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+  flex-wrap: wrap;
+}
+
+/* === CAMPOS DE FECHA Y HUÉSPEDES === */
+#form-busqueda input[type="date"],
+#form-busqueda input[type="number"] {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  min-width: 180px;
+  transition: border-color 0.3s;
+}
+
+#form-busqueda input:focus {
+  border-color: #25D366;
+  outline: none;
+}
+
+/* === HUÉSPEDES CON BOTONES + / - === */
+.huespedes-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-size: 16px;
+  min-width: 180px;
+}
+
+.huespedes-input button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  padding: 0 12px;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.huespedes-input button:hover {
+  color: #25D366;
+}
+
+.huespedes-input input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === BOTÓN BUSCAR === */
+#form-busqueda button[type="submit"] {
+  padding: 12px 30px;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#form-busqueda button[type="submit"]:hover {
+  background-color: #1ea955;
+}
+
+#form-busqueda button[type="submit"] i {
+  font-size: 18px;
+}
+
+.buscador-principal,
+.buscador-principal input,
+.buscador-principal button {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Presentación */
+.presentacion {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 400px; /* Más chico que antes */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.presentacion p {
+  font-size: 1.1em; /* Más grande que el normal */
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.presentacion img {
+  width: 160px;
+  max-width: 40%;
+}
+
+/* Galería de alojamiento con imagen principal + miniaturas */
+.alojamientos {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 40px;
+  gap: 16px;
+  overflow-x: auto;
+}
+
+.galeria-alojamiento {
+  flex: 0 0 auto;
+  width:300px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.75em;
+  margin-top: 8px;
+  color: #555;
+  text-align: center;
+}
+
+.servicios span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.preview img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-reserva {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #25D366;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+/* Comentarios */
+.comentarios-section {
+  background-color: #e0eafc;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.comentario {
+  background-color: white;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 25px;
+  position: relative;
+  margin: 10px;
+  width: 300px;
+  font-style: italic;
+}
+
+.comentario::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+  border: 10px solid transparent;
+  border-top-color: white;
+}
+
+/* Galería de Villa La Angostura */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95em;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-left p {
+  margin: 0;
+  color: white;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icon img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+.footer-icon:hover img {
+  transform: scale(1.2);
+  filter: brightness(0) saturate(100%) invert(59%) sepia(83%) saturate(258%) hue-rotate(86deg) brightness(95%) contrast(92%);
+}
+
+.comentarios-section {
+  background-color: #e0eafc;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel-comentarios {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  max-width: 90%;
+  margin: auto;
+}
+
+.comentario {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  position: relative;
+  font-style: italic;
+  display: none;
+}
+
+.comentario-logo {
+  width: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+/* pop up */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; /* aparece con JS */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-contenido {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px 30px;
+  background-color: #111;
+  border-radius: 16px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  animation: aparecer 0.5s ease-in-out;
+  background-blend-mode: overlay;
+}
+
+.popup-contenido .neon {
+  font-size: 2em;
+  color: #00ffc3;
+  text-shadow: 0 0 8px #00ffc3, 0 0 16px #00ffc3;
+  margin-bottom: 10px;
+}
+
+.popup-contenido .neon-text {
+  font-size: 1.2em;
+  color: #ffffff;
+  text-shadow: 0 0 6px #00ffc3;
+  margin-bottom: 20px;
+}
+
+.boton-popup {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00ffc3;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.boton-popup:hover {
+  background-color: #00cfa3;
+  color: #000;
+}
+
+.cerrar-popup {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+/* Ocultar menú hamburguesa en escritorio */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none !important;
+  }
+}
+

@@ -1,0 +1,604 @@
+/* === ESTILOS PARA LA PÁGINA DE ALOJAMIENTO === */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2e9db;
+  }
+  
+  /* HEADER */
+  .fondo-header {
+    background-image: url('imagenes/Casa\ Calafate--46.jpg'); /* cambiá por tu imagen real */
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    background-repeat: no-repeat;
+    height: 200px; /* ajustá si querés más o menos alto */
+    position: relative;
+  }
+  .fondo-header-cruz {
+    background-image: url('imagenes/Cruz\ del\ sur\ 5/cds5_12.jpg'); /* cambiá por tu imagen real */
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    background-repeat: no-repeat;
+    height: 200px; /* ajustá si querés más o menos alto */
+    position: relative;
+  }
+  .fondo-header-nilidas {
+    background-image: url('imagenes/Casa\ NIlidas/nilidas13.jpg'); /* cambiá por tu imagen real */
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    background-repeat: no-repeat;
+    height: 200px; /* ajustá si querés más o menos alto */
+    position: relative;
+  }
+  .fondo-header-gurisa {
+    background-image: url('imagenes/La\ Gurisa/gurisa1.jpg'); /* cambiá por tu imagen real */
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    background-repeat: no-repeat;
+    height: 200px; /* ajustá si querés más o menos alto */
+    position: relative;
+  }
+  .fondo-header-paisajismo {
+    background-image: url('imagenes/Paisajismo-domo/paisajismo7.jpg'); /* cambiá por tu imagen real */
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    background-repeat: no-repeat;
+    height: 200px; /* ajustá si querés más o menos alto */
+    position: relative;
+  }
+  
+  header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    position: relative;
+  }
+  
+  /* Logo general */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  
+  .logo-container img {
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  nav a:hover {
+    color: #25D366;
+  }
+  .boton-whatsapp-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    gap: 8px;
+    height: 10px; /* misma altura que los otros */
+    margin-left: 5px;
+    position: relative;
+    top: 0; /* alineación vertical */
+  }
+  
+  .boton-whatsapp-menu:hover {
+    background-color: white;
+    color: #25D366;
+  }
+  
+  .icono-whatsapp {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1); /* hace blanco el ícono */
+  }
+  .boton-whatsapp-menu:hover .icono-whatsapp {
+    filter: none;
+  }
+  
+  /* Botón hamburguesa */
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+ /* Estilo general del contenedor principal */
+ body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3e8d9;
+  margin: 0;
+  padding: 0;
+}
+
+.detalle-alojamiento {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.galeria-y-reserva {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Galería de imágenes */
+.galeria-imagenes {
+  flex: 1 1 65%;
+}
+
+.galeria-y-reserva {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.galeria-imagenes {
+  flex: 1 1 65%;
+  min-width: 300px;
+}
+
+.imagen-principal {
+  width: 100%;
+  height: 500px; /* Altura fija */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.imagen-principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnails-galeria {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.thumbnails-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 5px 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.thumbnails-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.thumbnails-container img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.thumbnails-container img:hover {
+  transform: scale(1.05);
+}
+
+.galeria-flecha {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Motor de reservas fijo */
+.motor-reserva {
+  flex: 1 1 30%;
+  position: sticky;
+  top: 40px;
+  align-self: flex-start;
+}
+
+
+:root {
+  --ldg-bnb-background: #ffffff;
+  --ldg-bnb-border-radius: 0.42em;
+  --ldg-bnb-box-shadow: 0px 24px 54px 0px rgba(0, 0, 0, 0.1);
+  --ldg-bnb-padding: 14px;
+  --ldg-bnb-input-background: #ffffff;
+  --ldg-bnb-button-border-radius: 3.58em;
+  --ldg-bnb-color-primary: #83a1c1;
+  --ldg-bnb-color-primary-lighter:#c1d0e0;
+  --ldg-bnb-color-primary-darker: #425161;
+  --ldg-bnb-color-primary-contrast: #333333;
+  --ldg-component-calendar-cell-selection-bg-color: #83a1c1;
+  --ldg-component-calendar-cell-selection-color: #333333;
+  --ldg-component-calendar-cell-selected-bg-color: #c1d0e0;
+  --ldg-component-calendar-cell-selected-color: #333333;
+  --ldg-bnb-font-family: inherit;
+}
+#lodgify-book-now-box {
+  width: 100%;
+}
+
+
+/* Descripción */
+.descripcion-completa {
+  margin-top: 50px;
+  text-align: left;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descripcion-completa h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.descripcion-completa p {
+  font-size: 1rem;
+  color: #333;
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+}
+
+/*Texto descriptivo */
+
+
+/* Servicios */
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+/* Mapa */
+.mapa-ubicacion {
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+.seccion-detalle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 60px auto;
+  max-width: 1200px;
+  padding: 0 30px;
+}
+
+.columna-texto {
+  flex: 1 1 600px;
+  min-width: 300px;
+}
+
+.columna-mapa {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+
+ /* Comentarios */
+ .comentarios-estaticos {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.comentarios-estaticos h2 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.comentarios-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.comentario {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.comentario .estrellas {
+  color: gold;
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.oculto {
+  display: none !important;
+}
+
+#btn-vermas {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #83a1c1;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#btn-vermas:hover {
+  background-color: #5f7a9d;
+}
+
+
+
+  
+    /* FOOTER */
+    .footer {
+        background-color: #222;
+        color: white;
+        padding: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.95em;
+        margin-top: 40px; /* separa del contenido de arriba */
+      }
+      
+      .footer-container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 20px;
+      }
+      
+      .footer-left p {
+        margin: 0;
+        color: white;
+      }
+      
+      .footer-right {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .footer-icon img {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.3s ease;
+        filter: brightness(0) invert(1);
+      }
+      
+      .footer-icon:hover img {
+        transform: scale(1.2);
+        filter: brightness(0) saturate(100%) invert(59%) sepia(83%) saturate(258%) hue-rotate(86deg) brightness(95%) contrast(92%);
+      }
+
+      
+
+          /* Ocultar menú hamburguesa en escritorio */
+.menu-toggle {
+    display: none;
+  }
+/* Ocultar menú hamburguesa en escritorio */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  /* Estructura general */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+  header,
+  section,
+  footer,
+  .fondo-header,
+  .comentarios-section {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Logo centrado y sin texto */
+  .logo-container {
+    justify-content: center;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .logo-container img {
+    display: block;
+    margin: auto;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+    /* Menú hamburguesa */
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: #333;
+      font-weight: bold;
+      z-index: 1100;
+      cursor: pointer;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      min-width: 160px;
+    }
+  
+    nav a {
+      margin: 10px 0;
+      font-size: 16px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+  
+    nav a:hover {
+      background-color: #f0f0f0;
+      color: #25D366;
+    }
+    .galeria-imagenes {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .imagen-principal {
+      width: 100%;
+      max-width: 100%;
+      height: 220px;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    
+    .imagen-principal img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .thumbnails-galeria {
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      width: 100%;
+      padding: 10px 0;
+      gap: 10px;
+    }
+    
+    .thumbnails-container {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+    
+    .thumbnails-container img {
+      height: 60px;
+      width: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+      /* Footer */
+    .footer-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+    }
+  
+    .footer-right {
+      justify-content: center;
+    }
+  
+    .footer-icon img {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .footer-left p {
+      font-size: 0.85em;
+    }
+    .imagen-principal {
+      height: 280px;
+    }
+  
+    .thumbnails-container img {
+      width: 80px;
+      height: 60px;
+    }
+  
+    .galeria-flecha {
+      font-size: 1.2rem;
+    }
+  
+    .motor-reserva {
+      position: static;
+      margin-top: 20px;
+    }
+    
+  }
+    

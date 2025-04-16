@@ -1,0 +1,431 @@
+/* ===== VIsta CELULAR ===== */
+/* ----------------------------- */
+/*     RESPONSIVE: VISTA MÓVIL   */
+/* ----------------------------- */
+
+@media (max-width: 768px) {
+
+    /* Estructura general */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      text-align: center;
+    }
+  
+    header,
+    section,
+    footer,
+    .fondo-header,
+    .comentarios-section {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+  
+    /* Logo centrado y sin texto */
+    .logo-container {
+      justify-content: center;
+    }
+  
+    .logo-text {
+      display: none;
+    }
+  
+    .logo-container img {
+      display: block;
+      margin: auto;
+    }
+    header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    /* Menú hamburguesa */
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: #333;
+      font-weight: bold;
+      z-index: 1100;
+      cursor: pointer;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      min-width: 160px;
+    }
+  
+    nav a {
+      margin: 10px 0;
+      font-size: 16px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+  
+    nav a:hover {
+      background-color: #f0f0f0;
+      color: #25D366;
+    }
+
+    .boton-whatsapp-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #25D366;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      gap: 8px;
+      height: 10px; /* misma altura que los otros */
+      margin-left: 5px;
+      position: relative;
+      top: 0; /* alineación vertical */
+    }
+    
+    .boton-whatsapp-menu:hover {
+      background-color: white;
+      color: #25D366;
+    }
+    
+    .icono-whatsapp {
+      width: 18px;
+      height: 18px;
+      filter: brightness(0) invert(1); /* hace blanco el ícono */
+    }
+    .boton-whatsapp-menu:hover .icono-whatsapp {
+      filter: none;
+    }
+  
+    /* Fondo del header y secciones */
+    .fondo-header,
+    .comentarios-section,
+    footer {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
+    /* Presentación */
+    .presentacion {
+      flex-direction: column;
+      text-align: center;
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+/* motor de reserva*/
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .buscador-principal {
+    padding: 20px;
+  }
+
+  #form-busqueda {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #form-busqueda input[type="date"],
+  .huespedes-input,
+  #form-busqueda button[type="submit"] {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  .huespedes-input {
+    justify-content: space-between;
+  }
+
+  .huespedes-input input {
+    width: 50px;
+  }
+
+  #form-busqueda button[type="submit"] {
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+}
+
+
+    .presentacion p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+  
+    .presentacion img {
+      width: 140px;
+      margin-top: 15px;
+    }
+  
+    /* Tarjetas alojamiento */
+    .alojamientos {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .galeria-alojamiento {
+      width: 100%;
+      max-width: 320px;
+      margin: auto;
+    }
+  
+    .thumbnails {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .thumbnails img {
+      width: 40px;
+      height: 28px;
+    }
+  
+    .btn-reserva {
+      font-size: 0.95em;
+      padding: 10px 20px;
+    }
+  
+  
+    /* Galería imágenes */
+    .galeria {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 20px;
+    }
+  
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  
+    /* Footer */
+    @media (max-width: 768px) {
+        .footer-container {
+          flex-direction: column-reverse;
+          align-items: center;
+          gap: 12px;
+          text-align: center;
+        }
+      
+        .footer-right {
+          justify-content: center;
+        }
+      
+        .footer-icon img {
+          width: 28px;
+          height: 28px;
+        }
+      
+        .footer-left p {
+          font-size: 0.85em;
+        }
+      }
+      
+  /* Esconde el botón en desktop */
+  .menu-toggle {
+    display: none;
+  }
+  
+  /* SOLO en móvil */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1100;
+      color: #333;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      top: 70px;
+      right: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+  
+    nav a {
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      border-radius: 6px;
+    }
+  
+    nav a:hover {
+      background-color: #f0f0f0;
+      color: #25D366;
+    }
+  }
+  /* Ocultar menú en desktop */
+  .menu-toggle {
+    display: none;
+  }
+  
+  /* Mostrar en móvil */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1100;
+      color: #333;
+    }
+  
+    #mobileMenu {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      top: 70px;
+      right: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+  
+    #mobileMenu a {
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      border-radius: 6px;
+    }
+  
+    #mobileMenu a:hover {
+      background-color: #f0f0f0;
+      color: #25D366;
+    }
+  }
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1100;
+      color: #333;
+    }
+    #mobileMenu {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      top: 70px;
+      right: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    #mobileMenu a {
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      border-radius: 6px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .carrusel-comentarios {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      overflow: hidden;
+      flex-wrap: nowrap;
+      gap: 16px;
+      padding: 0 10px;
+      max-width: 100%;
+    }
+  
+    .carrusel-comentarios .comentario {
+      min-width: 90vw;
+      max-width: 90vw;
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      font-style: italic;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  
+      /* Evitar cortes */
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+      line-height: 1.4;
+      font-size: 0.95em;
+    }
+  
+    .carrusel-comentarios .comentario img {
+      width: 20px;
+      height: auto;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+  

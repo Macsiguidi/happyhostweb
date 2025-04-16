@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+
+  .form-logo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .form-logo img {
+    max-width: 80px;
+    height: auto;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    background: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .grupo-estrellas {
+    margin-bottom: 20px;
+  }
+  
+  .grupo-estrellas label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 28px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .rating input:checked ~ label,
+  .rating input:checked + label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #f9c60c;
+    transform: scale(1.1);
+  }
+  
+  
+  
+  
+  button[type="submit"] {
+    background-color: #25D366;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1ebe57;
+  }
+  
+
+  /* Responsive */
+@media (max-width: 600px) {
+    .formulario-container {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    .formulario-container h1 {
+      font-size: 1.5em;
+    }
+  }

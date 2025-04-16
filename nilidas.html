@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propietarios | Happy Host Patagonia</title>
+  <link rel="stylesheet" href="unidades.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="fondo-header-nilidas">
+      <header>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="logo-container">
+          <img src="imagenes/logo.png" alt="Logo">
+        </div>
+        <nav id="mobileMenu">
+          <a href="index.html">Inicio</a>
+          <a href="alojamiento.html">Alojamientos</a>
+          <a href="propietarios.html">Propietarios</a>
+          <a href="https://wa.me/5492944700773" target="_blank" class="boton-whatsapp-menu">
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp" class="icono-whatsapp">
+            Contacto
+          </a>
+          
+        </nav>
+      </header>
+      
+    </div>
+  <div class="detalle-alojamiento">
+      <!-- Galería de imágenes y reserva en fila -->
+      <div class="galeria-y-reserva">
+        <div class="galeria-imagenes">
+          <div class="imagen-principal">
+            <img id="imagenGrande" src="imagenes/Casa NIlidas/nilidas1.jpg" alt="Imagen principal">
+          </div>
+          <div class="thumbnails-galeria">
+            <button class="galeria-flecha izq" onclick="moverThumbnails(-1)">❮</button>
+            <div class="thumbnails-container" id="thumbnailsContainer">
+              <img src="imagenes/Casa NIlidas/nilidas1.jpg" onclick="cambiarImagen(this)" alt="img1">
+              <img src="imagenes/Casa NIlidas/nilidas2.jpg" onclick="cambiarImagen(this)" alt="img2">
+              <img src="imagenes/Casa NIlidas/nilidas3.jpg" onclick="cambiarImagen(this)" alt="img3">
+              <img src="imagenes/Casa NIlidas/nilidas4.jpg" onclick="cambiarImagen(this)" alt="img4">
+              <img src="imagenes/Casa NIlidas/nilidas5.jpg" onclick="cambiarImagen(this)" alt="img5">
+              <img src="imagenes/Casa NIlidas/nilidas6.jpg" onclick="cambiarImagen(this)" alt="img6">
+              <img src="imagenes/Casa NIlidas/nilidas7.jpg" onclick="cambiarImagen(this)" alt="img7">
+              <img src="imagenes/Casa NIlidas/nilidas8.jpg" onclick="cambiarImagen(this)" alt="img8">
+              <img src="imagenes/Casa NIlidas/nilidas9.jpg" onclick="cambiarImagen(this)" alt="img8">
+              <img src="imagenes/Casa NIlidas/nilidas10.jpg" onclick="cambiarImagen(this)" alt="img8">
+              <img src="imagenes/Casa NIlidas/nilidas11.jpg" onclick="cambiarImagen(this)" alt="img8">
+              <img src="imagenes/Casa NIlidas/nilidas12.jpg" onclick="cambiarImagen(this)" alt="img8">
+              <img src="imagenes/Casa NIlidas/nilidas13.jpg" onclick="cambiarImagen(this)" alt="img8">
+              <img src="imagenes/Casa NIlidas/nilidas14.jpg" onclick="cambiarImagen(this)" alt="img8">
+              <img src="imagenes/Casa NIlidas/nilidas15.jpg" onclick="cambiarImagen(this)" alt="img8">
+              <img src="imagenes/Casa NIlidas/nilidas16.jpg" onclick="cambiarImagen(this)" alt="img8">
+              <img src="imagenes/Casa NIlidas/nilidas17.jpg" onclick="cambiarImagen(this)" alt="img8">
+            </div>
+            <button class="galeria-flecha der" onclick="moverThumbnails(1)">❯</button>
+          </div>
+        </div>
+    
+        <!-- Motor de reserva -->
+      <div class="motor-reserva">
+        <div
+        id="lodgify-book-now-box"
+        data-rental-id="601719"
+        data-website-id="533003"
+        data-slug="happyhost"
+        data-language-code="es"
+        data-new-tab="true"
+        data-version="stable"
+        data-currency-code="USD"
+        
+        
+        
+        data-check-in-label='Llegada'
+        data-check-out-label='Salida'
+        data-guests-label='Huéspedes'
+        data-guests-singular-label='{{NumberOfGuests}} huésped'
+        data-guests-plural-label='{{NumberOfGuests}} huéspedes'
+        data-location-input-label='Ubicación'
+        data-total-price-label='Precio total:'
+        data-select-dates-to-see-price-label='Seleccione las fechas para ver el precio total'
+        data-minimum-price-per-night-first-label='Desde'
+        data-minimum-price-per-night-second-label='por noche'
+        data-book-button-label='Reservar ahora'
+        data-guests-breakdown-label='Huéspedes'
+        data-adults-label='{"one":"adulto","other":"adultos"}'
+        data-adults-description='Edades {minAge} o mayores'
+        data-children-label='{"one":"ni\u00f1o","other":"ni\u00f1os"}'
+        data-children-description='Edades {minAge} - {maxAge}'
+        data-children-not-allowed-label='No adaptado para niños'
+        data-infants-label='{"one":"beb\u00e9","other":"beb\u00e9s"}'
+        data-infants-description='Menos de {maxAge}'
+        data-infants-not-allowed-label='No adaptado para bebés'
+        data-pets-label='{"one":"mascota","other":"mascotas"}'
+        data-pets-not-allowed-label='No permitido'
+        data-done-label='Hecho'
+        
+      ></div>
+        
+        
+      <script src="https://app.lodgify.com/book-now-box/stable/renderBookNowBox.js" defer></script>
+      </div>
+  </div>
+    
+      <!-- Acá abajo va toda la info -->
+      <section class="seccion-detalle">
+        <!-- Columna izquierda: texto, servicios, info extra -->
+        <div class="columna-texto">
+          <h1>Las Nilidas</h1>
+          <p><strong>Las Nilidas</strong>, un refugio acogedor ubicado en el barrio de Las Balsas, a solo 2 km del centro de Villa La Angostura (5 minutos en auto).</p>
+          
+          <ul>
+            <li><strong>Distribución práctica:</strong> Esta encantadora casa de una sola planta ofrece dos habitaciones dobles: una con cama matrimonial y otra con dos camas individuales, ideal para familias o grupos pequeños.</li>
+          
+            <li><strong>Espacios cálidos:</strong> El living comedor es amplio y luminoso, con grandes ventanales con vistas a los cerros y una salamandra que le da un toque cálido y hogareño.</li>
+          
+            <li><strong>Cocina equipada:</strong> Cocina completa con todo lo necesario, lavadero con lavarropas y lavavajillas para mayor comodidad durante tu estadía.</li>
+          
+            <li><strong>Calefacción eficiente:</strong> Estufa de tiro balanceado en todos los ambientes para asegurar un ambiente cálido y confortable.</li>
+          
+            <li><strong>Espacio exterior:</strong> Jardín privado con parrilla (chulengo), perfecto para disfrutar al aire libre.</li>
+          
+            <li><strong>Comodidades modernas:</strong> Con Wi-Fi, Smart TV <em>(sin cable)</em> y todos los servicios, <strong>Las Nilidas</strong> es ideal para quienes buscan tranquilidad sin alejarse del centro.</li>
+          </ul>
+          
+          <p>El acceso se realiza por una pintoresca calle de tierra, agregando un toque auténtico a tu experiencia en Villa La Angostura.</p>
+          
+          <p><strong>Check in / Check out AUTÓNOMO</strong></p>
+          
+          <div class="servicios">
+            <span>👤 4 personas</span>
+            <span>🛏️ 2 habitaciones</span>
+            <span>📶 Wifi</span>
+            <span>🍳 Cocina</span>
+            <span>🔥 Parrilla</span>
+            <span>🛏️ Blancos</span>
+            <span>🌡️ Calefacción</span>
+            <span>🚗 Estacionamiento</span>
+          </div>
+        </div>
+      
+        <!-- Columna derecha: mapa -->
+        <div class="columna-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.463489630539!2d-71.6258704!3d-40.7738235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9610bf3842344bd5%3A0x8c65dd0807963fcb!2sHappy%20host%20Patagonia%20-%20Casa%20Las%20Nilidas!5e0!3m2!1ses!2sar!4v1744652777657!5m2!1ses!2sar" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+      
+    
+    <script>
+      // Carrusel thumbnails
+      let scrollPosition = 0;
+      function moverThumbnails(direccion) {
+        const contenedor = document.getElementById('thumbnailsContainer');
+        const scrollAmount = 100;
+        contenedor.scrollLeft += direccion * scrollAmount;
+      }
+    
+      function cambiarImagen(img) {
+        const imagenPrincipal = document.getElementById('imagenGrande');
+        imagenPrincipal.src = img.src;
+      }
+    </script>
+    </div>  
+    
+     <!-- Comentarios 
+     <section class="comentarios-estaticos">
+      <h2>Comentarios de Huéspedes</h2>
+      <div class="comentarios-contenedor">
+        <div class="comentario">
+          <strong>María P.</strong>
+          <div class="estrellas">⭐⭐⭐⭐⭐</div>
+          <p>Hermosa estadía, todo impecable y muy cómodo. ¡Volvería sin dudas!</p>
+        </div>
+        <div class="comentario">
+          <strong>Luis G.</strong>
+          <div class="estrellas">⭐⭐⭐⭐⭐</div>
+          <p>Excelente atención y ubicación. Las fotos no mienten. 100% recomendable.</p>
+        </div>
+        <div class="comentario">
+          <strong>Carla M.</strong>
+          <div class="estrellas">⭐⭐⭐⭐⭐</div>
+          <p>Muy buena experiencia. Lugar cálido, limpio y con todos los servicios.</p>
+        </div>
+   
+    
+        <!-- Comentarios ocultos 
+        <div class="comentario oculto">
+          <strong>Romina L.</strong>
+          <div class="estrellas">⭐⭐⭐⭐⭐</div>
+          <p>Todo excelente. Buena calefacción, bien equipado. Repetiremos la visita.</p>
+        </div>
+        <div class="comentario oculto">
+          <strong>Fede B.</strong>
+          <div class="estrellas">⭐⭐⭐⭐⭐</div>
+          <p>La atención fue impecable y el entorno hermoso. Ideal para relajarse.</p>
+        </div>
+        <div class="comentario oculto">
+          <strong>Tomás R.</strong>
+          <div class="estrellas">⭐⭐⭐⭐⭐</div>
+          <p>Nos sentimos como en casa. El jardín es hermoso y la casa muy funcional.</p>
+        </div>
+      </div>
+      <button id="btn-vermas" onclick="mostrarMasComentarios()">Ver más</button>
+    </section>
+    
+    
+<!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>&copy; 2025 Happy Host Patagonia</p>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:happyhostpatagonia@gmail.com" class="footer-icon" title="Email">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email" />
+        </a>
+        <a href="https://www.instagram.com/hhpatagonia" target="_blank" class="footer-icon" title="Instagram">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" />
+        </a>
+        <a href="https://x.com/hhpatagonia" target="_blank" class="footer-icon" title="Twitter / X">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx.png" alt="X" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script src="https://app.lodgify.com/book-now-box/stable/renderBookNowBox.js" defer></script>
+  <script>
+    function mostrarMasComentarios() {
+      const ocultos = document.querySelectorAll(".comentarios-estaticos .comentario.oculto");
+      ocultos.forEach(comentario => {
+        comentario.classList.remove("oculto");
+      });
+      document.getElementById("btn-vermas").style.display = "none";
+    }
+  </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dejá tu comentario</title>
+  <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="form-logo">
+        <img src="imagenes/logo.png" alt="Logo Happy Host Patagonia">
+      </div>
+      
+  <section class="comentario-formulario">
+    <h1>¡Queremos conocer tu experiencia!</h1>
+    <form id="formulario-comentario">
+
+      <label for="alojamiento">¿En qué alojamiento estuviste?</label>
+      <select id="alojamiento" name="alojamiento" required>
+        <option value="">Seleccioná uno</option>
+        <option value="calafate1">Calafate 1</option>
+        <option value="calafate2">Calafate 2</option>
+        <option value="calafate3">Calafate 3</option>
+        <option value="calafate4">Calafate 4</option>
+        <option value="calafate5">Calafate 5</option>
+        <option value="calafate6">Calafate 6</option>
+        <option value="calafate7">Calafate 7</option>
+        <option value="cruzdelsur4">Cruz del Sur 4</option>
+        <option value="cruzdelsur5">Cruz del Sur 5</option>
+        <option value="nilidas">Nilidas</option>
+        <option value="paisajismo">Paisajismo</option>
+        <option value="lagurisa">La Gurisa</option>
+      </select>
+
+      <label for="checkin">Fecha de ingreso</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Fecha de salida</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <div class="grupo-estrellas">
+        <label for="lugar">Lugar:</label>
+        <div class="rating">
+          <input type="radio" name="lugar" id="lugar5" value="5"><label for="lugar5">★</label>
+          <input type="radio" name="lugar" id="lugar4" value="4"><label for="lugar4">★</label>
+          <input type="radio" name="lugar" id="lugar3" value="3"><label for="lugar3">★</label>
+          <input type="radio" name="lugar" id="lugar2" value="2"><label for="lugar2">★</label>
+          <input type="radio" name="lugar" id="lugar1" value="1"><label for="lugar1">★</label>
+        </div>
+      </div>
+      
+      <div class="grupo-estrellas">
+        <label for="limpieza">Limpieza:</label>
+        <div class="rating">
+          <input type="radio" name="limpieza" id="limpieza5" value="5"><label for="limpieza5">★</label>
+          <input type="radio" name="limpieza" id="limpieza4" value="4"><label for="limpieza4">★</label>
+          <input type="radio" name="limpieza" id="limpieza3" value="3"><label for="limpieza3">★</label>
+          <input type="radio" name="limpieza" id="limpieza2" value="2"><label for="limpieza2">★</label>
+          <input type="radio" name="limpieza" id="limpieza1" value="1"><label for="limpieza1">★</label>
+        </div>
+      </div>
+      
+      <div class="grupo-estrellas">
+        <label for="comunicacion">Comunicación:</label>
+        <div class="rating">
+          <input type="radio" name="comunicacion" id="comunicacion5" value="5"><label for="comunicacion5">★</label>
+          <input type="radio" name="comunicacion" id="comunicacion4" value="4"><label for="comunicacion4">★</label>
+          <input type="radio" name="comunicacion" id="comunicacion3" value="3"><label for="comunicacion3">★</label>
+          <input type="radio" name="comunicacion" id="comunicacion2" value="2"><label for="comunicacion2">★</label>
+          <input type="radio" name="comunicacion" id="comunicacion1" value="1"><label for="comunicacion1">★</label>
+        </div>
+      </div>
+      
+      <div class="grupo-estrellas">
+        <label for="precio">Relación precio/calidad:</label>
+        <div class="rating">
+          <input type="radio" name="precio" id="precio5" value="5"><label for="precio5">★</label>
+          <input type="radio" name="precio" id="precio4" value="4"><label for="precio4">★</label>
+          <input type="radio" name="precio" id="precio3" value="3"><label for="precio3">★</label>
+          <input type="radio" name="precio" id="precio2" value="2"><label for="precio2">★</label>
+          <input type="radio" name="precio" id="precio1" value="1"><label for="precio1">★</label>
+        </div>
+      </div>
+      
+      
+
+      <label for="comentario">Comentario público</label>
+      <textarea id="comentario" name="comentario" rows="4" placeholder="Este comentario se mostrará en la web" required></textarea>
+
+      <label for="comentario_privado">Comentario privado (solo para nosotros)</label>
+      <textarea id="comentario_privado" name="comentario_privado" rows="3" placeholder="Esto no se publica" required></textarea>
+
+      <button type="submit">Enviar comentario</button>
+    </form>
+  </section>
+
+  <script src="formulario.js"></script>
+</body>
+</html>

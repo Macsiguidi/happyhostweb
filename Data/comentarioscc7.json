@@ -1,0 +1,34 @@
+ "const comentariosCalafate7" = [
+    {
+      "nombre": "Martina R.",
+      "estadia": {
+        "desde": "2025-03-10",
+        "hasta": "2025-03-15"
+      },
+      "estrellas": {
+        "lugar": 5,
+        "limpieza": 5,
+        "comunicacion": 5,
+        "precio_calidad": 4
+      },
+      "comentario_publico": "Hermoso lugar, muy cómodo y cerca de todo. Lo recomendamos sin dudas.",
+      "comentario_privado": "Todo perfecto, solo notamos que el wifi a veces era un poco lento. Pero volveríamos.",
+      "fecha_comentario": "2025-04-15"
+    },
+    {
+      "nombre": "Luciano G.",
+      "estadia": {
+        "desde": "2025-04-01",
+        "hasta": "2025-04-07"
+      },
+      "estrellas": {
+        "lugar": 4,
+        "limpieza": 5,
+        "comunicacion": 5,
+        "precio_calidad": 5
+      },
+      "comentario_publico": "Muy buena experiencia. Limpieza impecable y atención excelente.",
+      "comentario_privado": "Gracias por todo, nos gustaría que el check-out fuera un poquito más tarde.",
+      "fecha_comentario": "2025-04-15"
+    }
+  ];

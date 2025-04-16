@@ -1,0 +1,445 @@
+/* === ESTILOS PARA LA PÁGINA DE ALOJAMIENTO === */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2e9db;
+}
+
+/* HEADER */
+.fondo-header {
+  background-image: url('imagenes/Fondo/ChatGPT\ Image\ 14\ abr\ 2025\,\ 08_38_36\ p.m..png'); /* cambiá por tu imagen real */
+  background-size: cover;
+  background-position: center top;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  height: 200px; /* ajustá si querés más o menos alto */
+  position: relative;
+  background-size: 100%;  /* Menor porcentaje = más alejada */
+}
+
+
+header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.4);
+  position: relative;
+}
+
+/* Logo general */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.logo-container img {
+  width: 50px;
+  height: auto;
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  color: #25D366;
+}
+.boton-whatsapp-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  gap: 8px;
+  height: 10px; /* misma altura que los otros */
+  margin-left: 5px;
+  position: relative;
+  top: 0; /* alineación vertical */
+}
+
+.boton-whatsapp-menu:hover {
+  background-color: white;
+  color: #25D366;
+}
+
+.icono-whatsapp {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1); /* hace blanco el ícono */
+}
+.boton-whatsapp-menu:hover .icono-whatsapp {
+  filter: none;
+}
+
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+/* ==================== ESTILOS ALOJAMIENTO ==================== */
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 30px;
+  margin-top: 40px; /* separa del top */
+  margin-left: 30px; /* separa del borde izquierdo */
+}
+
+
+/* Cada tarjeta */
+.tarjeta-alojamiento {
+  width: 30%;
+  max-width: calc(25% - 30px); /* también limita el ancho */;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+  flex: 1 1 calc(25% - 30px); /* 4 tarjetas por fila considerando el gap */
+}
+.info-extra {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Carrusel de imagen */
+.carrusel-contenedor {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.img-principal {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+
+/* Flechas carrusel */
+.flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.flecha.izq {
+  left: 10px;
+}
+
+.flecha.der {
+  right: 10px;
+}
+
+/* Contenido */
+.contenido-alojamiento {
+  padding: 20px;
+}
+
+.nombre-alojamiento {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.descripcion-alojamiento {
+  margin: 10px 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Servicios */
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* Botón */
+.boton-vermas {
+  background: #25D366;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+
+  /* FOOTER */
+  .footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    margin-top: 40px; /* separa del contenido de arriba */
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .footer-left p {
+    margin: 0;
+    color: white;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-icon img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1);
+  }
+  
+  .footer-icon:hover img {
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) invert(59%) sepia(83%) saturate(258%) hue-rotate(86deg) brightness(95%) contrast(92%);
+  }
+
+    /* Ocultar menú hamburguesa en escritorio */
+.menu-toggle {
+    display: none;
+  }
+
+
+  @media (max-width: 768px) {
+
+    /* Estructura general */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      text-align: center;
+    }
+  
+    header,
+    section,
+    footer,
+    .fondo-header,
+    .comentarios-section {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+  
+    /* Logo centrado y sin texto */
+    .logo-container {
+      justify-content: center;
+    }
+  
+    .logo-text {
+      display: none;
+    }
+  
+    .logo-container img {
+      display: block;
+      margin: auto;
+    }
+    header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    /* Menú hamburguesa */
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: #333;
+      font-weight: bold;
+      z-index: 1100;
+      cursor: pointer;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      min-width: 160px;
+    }
+  
+    nav a {
+      margin: 10px 0;
+      font-size: 16px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+  
+    nav a:hover {
+      background-color: #f0f0f0;
+      color: #25D366;
+    }
+  
+    /* Fondo del header y secciones */
+    .fondo-header,
+    .comentarios-section,
+    footer {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Responsive */
+@media (max-width: 1024px) {
+  .tarjeta-alojamiento {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta-alojamiento {
+    width: 100%;
+    max-width: 400px;
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-tarjetas {
+    margin-left: 0; /* ✅ elimina el desplazamiento a la derecha */
+    padding: 20px;  /* opcional: un padding uniforme más cómodo */
+    justify-content: center; /* por si no estaba claro */
+  }
+
+  .tarjeta-alojamiento {
+    margin: 0 auto; /* ✅ asegura que esté centrada */
+  }
+}
+
+@media (max-width: 1024px) {
+  .tarjeta-alojamiento {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reserva-box {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .logo-container {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .logo-container img {
+    width: 50px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav#mobileMenu {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+  /* Footer */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+    }
+  
+    .footer-right {
+      justify-content: center;
+    }
+  
+    .footer-icon img {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .footer-left p {
+      font-size: 0.85em;
+    }
+  }
+
+
+
