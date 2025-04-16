@@ -287,16 +287,16 @@ function cambiarImagenNilidas(direccion) {
 }
 //CArrusel imagenes Paisajismo-domo
 const imagenesPaisajismo = [
-  "imagenes/paisajismo-domo/paisajismo1.jpg",
-  "imagenes/paisajismo-domo/paisajismo2.jpg",
-  "imagenes/paisajismo-domo/paisajismo3.jpg",
-  "imagenes/paisajismo-domo/paisajismo4.jpg",
-  "imagenes/paisajismo-domo/paisajismo5.jpg",
-  "imagenes/paisajismo-domo/paisajismo6.jpg",
-  "imagenes/paisajismo-domo/paisajismo7.jpg",
-  "imagenes/paisajismo-domo/paisajismo8.jpg",
-  "imagenes/paisajismo-domo/paisajismo9.jpg",
-  "imagenes/paisajismo-domo/paisajismo10.jpg",
+  "imagenes/paisajismo/paisajismo1.jpg",
+  "imagenes/paisajismo/paisajismo2.jpg",
+  "imagenes/paisajismo/paisajismo3.jpg",
+  "imagenes/paisajismo/paisajismo4.jpg",
+  "imagenes/paisajismo/paisajismo5.jpg",
+  "imagenes/paisajismo/paisajismo6.jpg",
+  "imagenes/paisajismo/paisajismo7.jpg",
+  "imagenes/paisajismo/paisajismo8.jpg",
+  "imagenes/paisajismo/paisajismo9.jpg",
+  "imagenes/paisajismo/paisajismo10.jpg",
 ];
 
 let indicePaisajismo = 0;

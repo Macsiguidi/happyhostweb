@@ -44,7 +44,7 @@ body {
     position: relative;
   }
   .fondo-header-paisajismo {
-    background-image: url('imagenes/Paisajismo-domo/paisajismo7.jpg'); /* cambiá por tu imagen real */
+    background-image: url('imagenes/paisajismo/paisajismo7.jpg'); /* cambiá por tu imagen real */
     background-size: cover;
     background-position: center;
     min-height: 450px;
