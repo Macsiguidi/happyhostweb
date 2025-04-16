@@ -658,5 +658,8 @@ body {
       height: 300px;
       margin-top: 1rem;
     }
+    .columna-mapa {
+      margin: 0 auto;
+    }
   }
   
